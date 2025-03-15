@@ -9,10 +9,6 @@
 #include <cmath>
 
 #include <cstdlib> // For atoi()
-#include <iostream> 
-#include <vector> 
-#include <set> 
-using namespace std; 
 using namespace std;
 
 int main(int argc, char *argv[]) {
