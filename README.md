@@ -4,9 +4,11 @@
 ### The number of terms n is to be taken from the user through the command line. If thecommand line argument is not found ### then prompt the user to enter the value of n.
 # input
 
-include <iostream>
-include <cmath>
-include <cstdlib> // For atoi()
+#include<iostream>
+
+#include <cmath>
+
+#include <cstdlib> // For atoi()
 
 using namespace std;
 
