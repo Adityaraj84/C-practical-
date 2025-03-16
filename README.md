@@ -126,3 +126,5 @@ int main(int argc, char* argv[]) {
     countAlphabets(argc, argv);
     return 0;
 }
+![Image](https://github.com/user-attachments/assets/b42bc627-bd90-4d8e-9995-553dcb9d78df)
+
