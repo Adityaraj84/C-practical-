@@ -87,3 +87,42 @@ int main() {
 }
 ## Output 
 ![Image](https://github.com/user-attachments/assets/42daf852-7154-4aeb-9a14-4b341e811a59)
+
+# Programm 3
+## Write a program that prints a table indicating the number of occurrences of eachalphabet in the text entered as command line arguments.
+
+#include <iostream>
+#include <cctype>
+
+void countAlphabets(int argc, char* argv[]) {
+    int frequency[26] = {0}; // Array to store frequency of each letter
+
+    // Traverse each command-line argument
+    for (int i = 1; i < argc; i++) {
+        for (int j = 0; argv[i][j] != '\0'; j++) {
+            char ch = std::tolower(argv[i][j]); // Convert to lowercase
+            if (ch >= 'a' && ch <= 'z') { // Only count alphabets
+                frequency[ch - 'a']++;
+            }
+        }
+    }
+
+    // Print the table
+    std::cout << "Alphabet Frequency Table:\n";
+    std::cout << "--------------------------\n";
+    for (int i = 0; i < 26; i++) {
+        if (frequency[i] > 0) { // Print only occurring alphabets
+            std::cout << (char)('a' + i) << " : " << frequency[i] << std::endl;
+        }
+    }
+}
+
+int main(int argc, char* argv[]) {
+    if (argc < 2) {
+        std::cout << "Usage: " << argv[0] << " <text>\n";
+        return 1;
+    }
+
+    countAlphabets(argc, argv);
+    return 0;
+}
