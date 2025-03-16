@@ -85,4 +85,5 @@ int main() {
 
     return 0;
 }
-
+## Output 
+![Image](https://github.com/user-attachments/assets/42daf852-7154-4aeb-9a14-4b341e811a59)
