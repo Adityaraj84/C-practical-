@@ -172,3 +172,4 @@ int main() {
 
     return 0;
 }
+![Image](https://github.com/user-attachments/assets/83258d6c-aa48-420b-951b-3e44317be151)
