@@ -131,3 +131,44 @@ int main(int argc, char* argv[]) {
 # Programm 4
 ## Write a menu driven program to perform string manipulation (without using inbuiltstring functions):
 ## a. Show address of each character in string
+#include <iostream>
+
+using namespace std;
+
+// Function to show the address of each character in the string
+void showAddresses(char *str) {
+    cout << "\nCharacter Address Mapping:\n";
+    for (int i = 0; str[i] != '\0'; i++) {
+        cout << "Character: " << str[i] << ", Address: " << (void *)&str[i] << endl;
+    }
+}
+
+int main() {
+    char str[100]; // Maximum string size
+    int choice;
+
+    cout << "Enter a string: ";
+    cin.getline(str, 100); // Read the string including spaces
+
+    do {
+        cout << "\nString Manipulation Menu:";
+        cout << "\n1. Show address of each character";
+        cout << "\n2. Exit";
+        cout << "\nEnter your choice: ";
+        cin >> choice;
+        cin.ignore(); // Clear newline character from buffer
+
+        switch (choice) {
+            case 1:
+                showAddresses(str);
+                break;
+            case 2:
+                cout << "Exiting program...\n";
+                return 0;
+            default:
+                cout << "Invalid choice. Please try again.\n";
+        }
+    } while (true);
+
+    return 0;
+}
