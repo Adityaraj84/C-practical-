@@ -258,4 +258,6 @@ int main() {
 # Programm 7
 # Write a program to calculate GCD of two numbers (i) with recursion (ii) without recursion.
 
+![Image](https://github.com/user-attachments/assets/563abfe4-d353-4e7e-a902-d253853231c2)
+![Image](https://github.com/user-attachments/assets/8732513b-d591-4eb2-a2c1-9e124c74ef3d)
 
