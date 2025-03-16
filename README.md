@@ -131,45 +131,13 @@ int main(int argc, char* argv[]) {
 # Programm 4
 ## Write a menu driven program to perform string manipulation (without using inbuiltstring functions):
 ## a. Show address of each character in string
-#include <iostream>
-
-using namespace std;
-
-// Function to show the address of each character in the string
-void showAddresses(char *str) {
-    cout << "\nCharacter Address Mapping:\n";
-    for (int i = 0; str[i] != '\0'; i++) {
-        cout << "Character: " << str[i] << ", Address: " << (void *)&str[i] << endl;
-    }
-}
-
-int main() {
-    char str[100]; // Maximum string size
-    int choice;
-
-    cout << "Enter a string: ";
-    cin.getline(str, 100); // Read the string including spaces
-
-    do {
-        cout << "\nString Manipulation Menu:";
-        cout << "\n1. Show address of each character";
-        cout << "\n2. Exit";
-        cout << "\nEnter your choice: ";
-        cin >> choice;
-        cin.ignore(); // Clear newline character from buffer
-
-        switch (choice) {
-            case 1:
-                showAddresses(str);
-                break;
-            case 2:
-                cout << "Exiting program...\n";
-                return 0;
-            default:
-                cout << "Invalid choice. Please try again.\n";
-        }
-    } while (true);
-
-    return 0;
-}
 ![Image](https://github.com/user-attachments/assets/83258d6c-aa48-420b-951b-3e44317be151)
+## b. Concatenate two strings
+![Image](https://github.com/user-attachments/assets/857e1af8-6c37-4ff4-a208-783cc7299e9d)
+## c. Compare two strings
+![Image](https://github.com/user-attachments/assets/4fef2173-dfbe-4913-a916-72fffdabd479)
+## d. Calculate length of the string (use pointers)
+![Image](https://github.com/user-attachments/assets/7acccc8f-2ddd-426b-bdee-6783428751b1)
+
+
+
