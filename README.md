@@ -253,11 +253,8 @@ int main() {
 
     return 0;
 }
+https://drive.google.com/file/d/1FxYN8hgDeud4k-EqA3-fuEec75ACEk7f/view?usp=drivesdk
 ## Output 
-Enter the number of elements: 5
-Enter 5 sorted elements: 1 3 5 7 9
-Enter the element to search: 7
-Element found at index (Recursive): 3
-Element found at index (Iterative): 3
+https://drive.google.com/file/d/1G-3z1qInJ-NMysBaHPJDu7Z448xZhhLZ/view?usp=drivesdk
 
 
