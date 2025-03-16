@@ -251,10 +251,6 @@ int main() {
     else
         cout << "Element not found (Iterative)" << endl;
 
-    return 0;
-}
-https://drive.google.com/file/d/1FxYN8hgDeud4k-EqA3-fuEec75ACEk7f/view?usp=drivesdk
-## Output 
-https://drive.google.com/file/d/1G-3z1qInJ-NMysBaHPJDu7Z448xZhhLZ/view?usp=drivesdk
-
+    return 0}
+    
 
