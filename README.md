@@ -265,10 +265,5 @@ int main() {
 ![Image](https://github.com/user-attachments/assets/c66977ca-52ec-4147-8a34-defe22a8ade1)
 ![Image](https://github.com/user-attachments/assets/0f3de777-c39a-46b5-92db-4fe3647fc1fb)
 # Programm 9
-# Define a class Person having name as a data member. Inherit two classes Student and employee from Person. Student has additional attributes as course, marks and yearand Employee has department and salary. Write display() method in all the three classes to display the corresponding attributes. Provide the necessary methods to showruntime polymorphism
-![Image](https://github.com/user-attachments/assets/38809941-9e71-4033-ac3e-1aa708e02c20)
-
-![Image](https://github.com/user-attachments/assets/adcf7983-343a-4fbf-9dbe-94e4c7b8ddb1)
-
-![Image](https://github.com/user-attachments/assets/90f44601-fd3c-4cd8-998a-975d36cf6b4a)
-
+# Define a class Person having name as a data member. Inherit two classes Student and employee from Person. Student has additional attributes as course, marks and yearand Employee has department and salary. Write display() method in all the three classes to display the corresponding attributes. Provide the necessary methods to showruntime 
+![Image](https://github.com/user-attachments/assets/3ab44989-ebb5-4282-bec6-e8c555257dbb)
