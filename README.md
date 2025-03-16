@@ -128,3 +128,6 @@ int main(int argc, char* argv[]) {
 }
 ![Image](https://github.com/user-attachments/assets/b42bc627-bd90-4d8e-9995-553dcb9d78df)
 
+# Programm 4
+## Write a menu driven program to perform string manipulation (without using inbuiltstring functions):
+## a. Show address of each character in string
