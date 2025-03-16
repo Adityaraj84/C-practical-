@@ -184,3 +184,80 @@ int main() {
 }
 ![Image](https://github.com/user-attachments/assets/d4ef3150-3a13-40ec-acb2-8bfb3ff37550)
 ![Image](https://github.com/user-attachments/assets/2bf3948f-7613-4f07-b83f-d27b3e03315b)
+# 6. Write a program to search a given element in a set of N numbers using Binary search(i) with recursion (ii) without recursion.
+#include <iostream>
+using namespace std;
+
+// Recursive Binary Search
+int binarySearchRecursive(int arr[], int left, int right, int key) {
+    if (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        // If the element is present at the middle itself
+        if (arr[mid] == key)
+            return mid;
+
+        // If the element is smaller than mid, it can only be in left subarray
+        if (arr[mid] > key)
+            return binarySearchRecursive(arr, left, mid - 1, key);
+
+        // Else the element can only be in right subarray
+        return binarySearchRecursive(arr, mid + 1, right, key);
+    }
+    return -1; // Element not found
+}
+
+// Iterative Binary Search
+int binarySearchIterative(int arr[], int n, int key) {
+    int left = 0, right = n - 1;
+    
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        if (arr[mid] == key)
+            return mid;
+        else if (arr[mid] > key)
+            right = mid - 1;
+        else
+            left = mid + 1;
+    }
+    return -1; // Element not found
+}
+
+int main() {
+    int n, key;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+
+    int arr[n];
+    cout << "Enter " << n << " sorted elements: ";
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+
+    cout << "Enter the element to search: ";
+    cin >> key;
+
+    // Using Recursive Binary Search
+    int resultRecursive = binarySearchRecursive(arr, 0, n - 1, key);
+    if (resultRecursive != -1)
+        cout << "Element found at index (Recursive): " << resultRecursive << endl;
+    else
+        cout << "Element not found (Recursive)" << endl;
+
+    // Using Iterative Binary Search
+    int resultIterative = binarySearchIterative(arr, n, key);
+    if (resultIterative != -1)
+        cout << "Element found at index (Iterative): " << resultIterative << endl;
+    else
+        cout << "Element not found (Iterative)" << endl;
+
+    return 0;
+}
+## Output 
+Enter the number of elements: 5
+Enter 5 sorted elements: 1 3 5 7 9
+Enter the element to search: 7
+Element found at index (Recursive): 3
+Element found at index (Iterative): 3
+
+
