@@ -44,4 +44,45 @@ int main(int argc, char *argv[]) {
 }
 ![Image](https://github.com/user-attachments/assets/7f740462-eebb-4dc4-a8ac-f047eda0ac65)
 
+# programm 2
+## Write a program to remove the duplicates from an array.
+#include <iostream>
+#include <unordered_set>
+#include <vector>
+
+void removeDuplicates(int arr[], int &size) {
+    std::unordered_set<int> seen;
+    std::vector<int> uniqueArr;
+
+    // Insert elements into the set (removes duplicates automatically)
+    for (int i = 0; i < size; i++) {
+        if (seen.find(arr[i]) == seen.end()) {
+            seen.insert(arr[i]);
+            uniqueArr.push_back(arr[i]);
+        }
+    }
+
+    // Copy back to original array
+    size = uniqueArr.size();
+    for (int i = 0; i < size; i++) {
+        arr[i] = uniqueArr[i];
+    }
+}
+
+int main() {
+    int arr[] = {4, 2, 2, 8, 3, 3, 1, 4, 5, 1};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    std::cout << "Original Array: ";
+    for (int i = 0; i < size; i++)
+        std::cout << arr[i] << " ";
+    
+    removeDuplicates(arr, size);
+
+    std::cout << "\nArray after removing duplicates: ";
+    for (int i = 0; i < size; i++)
+        std::cout << arr[i] << " ";
+
+    return 0;
+}
 
