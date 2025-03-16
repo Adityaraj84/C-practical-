@@ -267,3 +267,4 @@ int main() {
 # Programm 9
 # Define a class Person having name as a data member. Inherit two classes Student and employee from Person. Student has additional attributes as course, marks and yearand Employee has department and salary. Write display() method in all the three classes to display the corresponding attributes. Provide the necessary methods to showruntime 
 ![Image](https://github.com/user-attachments/assets/3ab44989-ebb5-4282-bec6-e8c555257dbb)
+![Image](https://github.com/user-attachments/assets/1b0cbd0e-04b7-4970-9d78-95f594142c91)
