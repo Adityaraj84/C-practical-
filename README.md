@@ -269,5 +269,6 @@ int main() {
 ![Image](https://github.com/user-attachments/assets/3ab44989-ebb5-4282-bec6-e8c555257dbb)
 ![Image](https://github.com/user-attachments/assets/1b0cbd0e-04b7-4970-9d78-95f594142c91)
 # programm 10
-## Create a Triangle class. Add exception handling statements to ensure the followingconditions: all sides are greater than 0 and sum of any two sides are greater than the third side. The class should also have overloaded functions for calculating the area of a right angled triangle as well as using Heron's formula to calculate the area of any type of triangle
-
+## Create a Triangle class. Add exception handling statements to ensure the followingconditions: all sides are greater than 0 and sum of any two sides are greater than the third side. The class should also have overloaded functions for calculating the area of a right angled triangle as well as using Heron's formula to calculate the area of any type of triangle)
+![Image](https://github.com/user-attachments/assets/71890b92-39d6-45ef-8d22-a927a3e3f056)
+![Image](https://github.com/user-attachments/assets/5f9011ab-6ca2-4ee9-b8d7-b6c45ecf1d0d)
