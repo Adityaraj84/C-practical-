@@ -272,3 +272,5 @@ int main() {
 ## Create a Triangle class. Add exception handling statements to ensure the followingconditions: all sides are greater than 0 and sum of any two sides are greater than the third side. The class should also have overloaded functions for calculating the area of a right angled triangle as well as using Heron's formula to calculate the area of any type of triangle)
 ![Image](https://github.com/user-attachments/assets/71890b92-39d6-45ef-8d22-a927a3e3f056)
 ![Image](https://github.com/user-attachments/assets/5f9011ab-6ca2-4ee9-b8d7-b6c45ecf1d0d)
+# Programm 11
+## Create a class Student containing fields for Roll No., Name, Class, Year and Total Marks. Write a program to store 5 objects of Student class in a file. Retrieve these records from the file and display them
