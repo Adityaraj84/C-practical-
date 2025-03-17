@@ -274,3 +274,75 @@ int main() {
 ![Image](https://github.com/user-attachments/assets/5f9011ab-6ca2-4ee9-b8d7-b6c45ecf1d0d)
 # Programm 11
 ## Create a class Student containing fields for Roll No., Name, Class, Year and Total Marks. Write a program to store 5 objects of Student class in a file. Retrieve these records from the file and display them
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+class Student {
+private:
+    int rollNo;
+    char name[50];
+    char studentClass[10];
+    int year;
+    float totalMarks;
+
+public:
+    void getData() {
+        cout << "Enter Roll No.: ";
+        cin >> rollNo;
+        cin.ignore();
+        cout << "Enter Name: ";
+        cin.getline(name, 50);
+        cout << "Enter Class: ";
+        cin.getline(studentClass, 10);
+        cout << "Enter Year: ";
+        cin >> year;
+        cout << "Enter Total Marks: ";
+        cin >> totalMarks;
+    }
+
+    void showData() const {
+        cout << "\nRoll No.: " << rollNo;
+        cout << "\nName: " << name;
+        cout << "\nClass: " << studentClass;
+        cout << "\nYear: " << year;
+        cout << "\nTotal Marks: " << totalMarks << endl;
+    }
+
+    void writeToFile() {
+        ofstream outFile("students.dat", ios::binary | ios::app);
+        outFile.write((char *)this, sizeof(*this));
+        outFile.close();
+    }
+
+    void readFromFile() {
+        ifstream inFile("students.dat", ios::binary);
+        if (!inFile) {
+            cout << "Error: Cannot open file!" << endl;
+            return;
+        }
+        while (inFile.read((char *)this, sizeof(*this))) {
+            showData();
+        }
+        inFile.close();
+    }
+};
+
+int main() {
+    Student s;
+    int n = 5;
+
+    // Writing data to file
+    cout << "Enter details of 5 students:\n";
+    for (int i = 0; i < n; i++) {
+        s.getData();
+        s.writeToFile();
+    }
+
+    // Reading data from file
+    cout << "\nStudent records retrieved from file:\n";
+    s.readFromFile();
+
+    return 0;
+}
