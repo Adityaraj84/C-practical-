@@ -346,3 +346,5 @@ int main() {
 
     return 0;
 }
+![Image](https://github.com/user-attachments/assets/d277f4dd-68dc-43ad-9565-b8ba4a4d4fc9)
+![Image](https://github.com/user-attachments/assets/b863b849-b52c-4e9e-850b-f013ea56c23d)
