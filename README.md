@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
 }
 ![Image](https://github.com/user-attachments/assets/7f740462-eebb-4dc4-a8ac-f047eda0ac65)
 
-# programm 2
+# program 2
 ## Write a program to remove the duplicates from an array.
 #include <iostream>
 #include <unordered_set>
@@ -86,7 +86,7 @@ int main() {
 ## Output 
 ![Image](https://github.com/user-attachments/assets/42daf852-7154-4aeb-9a14-4b341e811a59)
 
-# Programm 3
+# Program 3
 ## Write a program that prints a table indicating the number of occurrences of eachalphabet in the text entered as command line arguments.
 
 #include <iostream>
@@ -126,7 +126,7 @@ int main(int argc, char* argv[]) {
 }
 ![Image](https://github.com/user-attachments/assets/b42bc627-bd90-4d8e-9995-553dcb9d78df)
 
-# Programm 4
+# Program 4
 ## Write a menu driven program to perform string manipulation (without using inbuiltstring functions):
 ## a. Show address of each character in string
 ![Image](https://github.com/user-attachments/assets/83258d6c-aa48-420b-951b-3e44317be151)
@@ -135,7 +135,7 @@ int main(int argc, char* argv[]) {
 ## c. Compare two strings
 ![Image](https://github.com/user-attachments/assets/4fef2173-dfbe-4913-a916-72fffdabd479)
 
-# Programm 5 
+# Program 5 
 ## Write a program to merge two ordered arrays to get a single ordered array
 #include <iostream>
 using namespace std;
@@ -253,26 +253,26 @@ int main() {
     
  ![Image](https://github.com/user-attachments/assets/1263bf80-1fe7-414e-8d4e-7ffdf734c067)
 ![Image](https://github.com/user-attachments/assets/90b5beaa-c896-4245-a73a-73b86e02fd02)
-# Programm 7
+# Program 7
 # Write a program to calculate GCD of two numbers (i) with recursion (ii) without recursion.
 
 ![Image](https://github.com/user-attachments/assets/563abfe4-d353-4e7e-a902-d253853231c2)
 ![Image](https://github.com/user-attachments/assets/8732513b-d591-4eb2-a2c1-9e124c74ef3d)
 
-# Programm 8
+# Program 8
 # Create a Matrix class. Write a menu-driven program to perform following Matrixoperations (exceptions should be thrown by the functions if matrices passed to them are incompatible and handled by the main() function):a. Sum b. Productc. Transpose
 ![Image](https://github.com/user-attachments/assets/59d3f351-5d7e-4101-82f7-6c2ab3ad4ff0)
 ![Image](https://github.com/user-attachments/assets/c66977ca-52ec-4147-8a34-defe22a8ade1)
 ![Image](https://github.com/user-attachments/assets/0f3de777-c39a-46b5-92db-4fe3647fc1fb)
-# Programm 9
+# Program 9
 # Define a class Person having name as a data member. Inherit two classes Student and employee from Person. Student has additional attributes as course, marks and yearand Employee has department and salary. Write display() method in all the three classes to display the corresponding attributes. Provide the necessary methods to showruntime 
 ![Image](https://github.com/user-attachments/assets/3ab44989-ebb5-4282-bec6-e8c555257dbb)
 ![Image](https://github.com/user-attachments/assets/1b0cbd0e-04b7-4970-9d78-95f594142c91)
-# programm 10
+# program 10
 ## Create a Triangle class. Add exception handling statements to ensure the followingconditions: all sides are greater than 0 and sum of any two sides are greater than the third side. The class should also have overloaded functions for calculating the area of a right angled triangle as well as using Heron's formula to calculate the area of any type of triangle)
 ![Image](https://github.com/user-attachments/assets/71890b92-39d6-45ef-8d22-a927a3e3f056)
 ![Image](https://github.com/user-attachments/assets/5f9011ab-6ca2-4ee9-b8d7-b6c45ecf1d0d)
-# Programm 11
+# Program 11
 ## Create a class Student containing fields for Roll No., Name, Class, Year and Total Marks. Write a program to store 5 objects of Student class in a file. Retrieve these records from the file and display them
 #include <iostream>
 #include <fstream>
